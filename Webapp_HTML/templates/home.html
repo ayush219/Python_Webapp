@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Prediction</title>
+</head>
+<body>
+    <h1><div style="text-align:center"><font color= "blue">Classification Prediction</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center"><font color= "blue">Enter values</font></div></h2>
+    </br>   
+    <div class='container'>
+    <div class='row'>
+        <div class='col-60'>
+            <form method="POST" action="/predict" style="text-align:center">
+                <div class= "form-group">
+                    <label for="age"><p class="font-weight-bold">Age</p></label>
+                    <input type="text" name="age">
+                    <small id="agehelp" class="form-text text-method">Enter value</small>
+                </div> 
+                <div class= "form-group">
+                    <label for="salary"><p class="font-weight-bold">Salary</p></label>
+                    <input type="text" name="salary">
+                    <small id="salhelp" class="form-text text-method">Enter value</small>
+                </div>   
+                <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>        
+        </div>                    
+    </div>
+    </div> 
+    
+</body>
+</html>
+
